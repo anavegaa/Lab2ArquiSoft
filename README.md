@@ -1,1 +1,1 @@
-# lab2ArquiSoft
+# Lab2ArquiSoft
