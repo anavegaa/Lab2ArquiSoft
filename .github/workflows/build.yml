@@ -35,7 +35,7 @@ jobs:
         run: mvn -B test
 
 #Sonar's Job
-sonar_analysis:
+sonar_job:
   #Depends on test's job
   needs: tests
   name: SonarCloud analysis
