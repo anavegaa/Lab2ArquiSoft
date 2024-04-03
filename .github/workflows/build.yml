@@ -17,7 +17,7 @@ jobs:
     steps:
       #Check-out your repository under $GITHUB_WORKSPACE, so your workflow can access it
       - uses: actions/checkout@v1
-      #Set up JDK 11
+      #Set up JDK 21
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
@@ -34,9 +34,8 @@ jobs:
       - name: Run Tests
         run: mvn -B test
 
-
 #Sonar's Job
-sonar_analysis_job:
+sonar:
   #Depends on test's job
   needs: tests
   name: SonarCloud analysis
